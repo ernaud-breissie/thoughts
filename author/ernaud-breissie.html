@@ -21,7 +21,594 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="https://ernaud-breissie.github.io/thoughts/betrayal-of-the-implicit-contract.html">Betrayal  of the implicit contract</a></h1>
+                    <h1 class="entry-title"><a href="https://ernaud-breissie.github.io/thoughts/listing-of-auction-mechanics.html">Listing of auction mechanics</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2025-05-16T09:20:00+02:00">
+                Published: ven. 16 mai 2025
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="https://ernaud-breissie.github.io/thoughts/author/ernaud-breissie.html">Ernaud Breissie</a>
+        </address>
+<p>In <a href="https://ernaud-breissie.github.io/thoughts/category/gamedesign.html">Gamedesign</a>.</p>
+<p>tags: <a href="https://ernaud-breissie.github.io/thoughts/tag/auction.html">auction</a> <a href="https://ernaud-breissie.github.io/thoughts/tag/mechanic.html">mechanic</a> <a href="https://ernaud-breissie.github.io/thoughts/tag/rules.html">rules</a> </p>
+</footer><!-- /.post-info --><p>English version after the french one</p>
+<p><strong>Systèmes d'Enchères dans les Jeux de Société : Mécanismes, Stratégies, Conception</strong></p>
+<p>Les mécanismes d'enchères constituent un ensemble de règles permettant l'allocation de biens ou de privilèges par un processus d'offres compétitives. Ils peuvent être centraux ou subsidiaires à la structure ludique. Ce document analyse les phases, variantes et principes de conception des enchères.</p>
+<h3>Phase 1 : Configuration Initiale – Cadre Économique des Enchères</h3>
+<p>Les conditions initiales déterminent la valeur, le risque et la récompense.</p>
+<ul>
+<li>
+<p><strong>Coût de Participation :</strong></p>
+<ul>
+<li><strong>Accès Payant ou Gratuit :</strong> La participation à une enchère peut être libre ou conditionnée par un coût (fixe, variable, remboursable, perdu, jetons spécifiques).<ul>
+<li><em>Exemple :</em> Certains jeux exigent une dépense initiale pour participer, introduisant une première décision d'évaluation coût-bénéfice.</li>
+</ul>
+</li>
+<li><strong>Impact :</strong> Un coût d'entrée affecte l'évaluation initiale de l'objet, peut dissuader les joueurs avec peu de ressources ou rendre la participation plus calculée.</li>
+</ul>
+</li>
+<li>
+<p><strong>Ressources Initiales et Capacité d'Enchère :</strong></p>
+<ul>
+<li><strong>Symétrie ou Asymétrie :</strong> Les joueurs peuvent démarrer avec des ressources (monnaie, jetons d'enchère) égales ou inégales, influençant les dynamiques précoces.</li>
+<li><strong>Nature de la Monnaie :</strong> Monnaie universelle du jeu ou jetons dédiés (usage unique ou multiple).<ul>
+<li><em>Exemple :</em> <a href="https://boardgamegeek.com/boardgame/220/high-society"><strong>High Society</strong> (BGG 220)</a> utilise des cartes monétaires de valeurs fixes, perdues après usage. <a href="https://boardgamegeek.com/boardgame/54998/cyclades"><strong>Cyclades</strong> (BGG 54998)</a> emploie la monnaie générale pour les faveurs divines.</li>
+</ul>
+</li>
+<li><strong>Persistance et Modèle Économique (Ouvert, Fermé, Semi-Fermé) :</strong><ul>
+<li>La monnaie d'enchère est-elle finie ou renouvelable ? L'argent dépensé revient-il aux joueurs (système fermé, ex: <a href="https://boardgamegeek.com/boardgame/118/modern-art"><strong>Modern Art</strong> (BGG 118)</a>), est-il retiré du jeu (système ouvert, risque de déflation), ou une combinaison ? Ce choix affecte les courbes de valeur et la tension économique.</li>
+<li><em>Exemple :</em> Dans <a href="https://boardgamegeek.com/boardgame/12/ra"><strong>Ra</strong> (BGG 12)</a>, les disques de Soleil pour enchérir sont une ressource limitée par époque, retournant périodiquement à une réserve.</li>
+</ul>
+</li>
+<li><strong>Impact :</strong> Le modèle économique détermine si les enchères sont un jeu à somme nulle, positive ou négative pour l'économie globale, influençant la propension à dépenser et la valeur perçue de la monnaie.</li>
+</ul>
+</li>
+</ul>
+<h3>Phase 2 : Processus d'Enchère</h3>
+<p>La compétition se manifeste via divers formats.</p>
+<ul>
+<li>
+<p><strong>A. Formats d'Enchères :</strong></p>
+<ol>
+<li><strong>Enchère Libre (Ouverte) :</strong> Offres successives jusqu'à un seul enchérisseur. Rapide, interactif.<ul>
+<li><em>Exemple :</em> Acquisition de propriétés dans <a href="https://boardgamegeek.com/boardgame/1406/monopoly"><strong>Monopoly</strong> (BGG 1406)</a>.</li>
+</ul>
+</li>
+<li><strong>Enchère à Tour de Rôle :</strong> Offres ou passes dans un ordre fixe. Structurée, passes tactiques.<ul>
+<li><em>Exemple :</em> Enchères pour tuiles dans <a href="https://boardgamegeek.com/boardgame/12/ra"><strong>Ra</strong> (BGG 12)</a>; certains types dans <a href="https://boardgamegeek.com/boardgame/118/modern-art"><strong>Modern Art</strong> (BGG 118)</a>.</li>
+</ul>
+</li>
+<li><strong>Enchère Ascendante (Anglaise) :</strong> Prix de départ bas, offres croissantes. Le dernier l'emporte.<ul>
+<li><em>Exemple :</em> Majorité des enchères dans <a href="https://boardgamegeek.com/boardgame/220/high-society"><strong>High Society</strong> (BGG 220)</a>.</li>
+</ul>
+</li>
+<li><strong>Enchère Cachée (Secrète / "Closed Fist" / "Blind Auction") :</strong> Mises secrètes et simultanées. Tension, bluff.<ul>
+<li><em>Exemple :</em> Combats dans <a href="https://boardgamegeek.com/boardgame/169786/scythe"><strong>Scythe</strong> (BGG 169786)</a>; enchères pour régions dans <a href="https://boardgamegeek.com/boardgame/127023/kemet"><strong>Kemet</strong> (BGG 127023)</a>.</li>
+</ul>
+</li>
+<li><strong>Enchère Descendante (Hollandaise) :</strong> Prix de départ élevé, décroissant. Le premier acceptant l'emporte.<ul>
+<li><em>Exemple :</em> Première phase de <a href="https://boardgamegeek.com/boardgame/172/sale"><strong>For Sale</strong> (BGG 172)</a>.</li>
+</ul>
+</li>
+<li><strong>Enchère Unique au Plus Offrant (Scellée au Premier Prix) :</strong> Enchère cachée, le gagnant paie son offre. Sujette à la "malédiction du vainqueur".<ul>
+<li><em>Exemple :</em> Enchère "une fois autour" dans <a href="https://boardgamegeek.com/boardgame/118/modern-art"><strong>Modern Art</strong> (BGG 118)</a>.</li>
+</ul>
+</li>
+<li><strong>Enchère Unique au Second Prix (Vickrey) :</strong> Offre la plus haute gagne, paie le montant de la seconde offre. Incite théoriquement à miser sa valeur réelle. Rare.<ul>
+<li><em>Source :</em> <a href="https://en.wikipedia.org/wiki/Vickrey_auction">Vickrey Auction (Wikipedia)</a></li>
+</ul>
+</li>
+<li><strong>Enchère Inversée :</strong> Joueurs baissent le prix accepté (pour un contrat). L'offre la plus basse gagne.</li>
+<li><strong>Enchère à Contraintes :</strong> Offres suivant règles spécifiques (annonces de contrats dans jeux de plis).</li>
+<li><strong>Enchère à Élimination :</strong> Surenchérir ou se retirer définitivement, souvent tour par tour.</li>
+<li><strong>Enchère Hybride :</strong> Combine plusieurs types. <a href="https://boardgamegeek.com/boardgame/118/modern-art"><strong>Modern Art</strong> (BGG 118)</a> en est un exemple.</li>
+<li><strong>Enchères "Tout le Monde Paie" ("All-Pay Auctions") :</strong> Tous les enchérisseurs paient leur mise, gagnant ou non. Punitif.<ul>
+<li><em>Exemple :</em> Enchères pour gladiateurs dans <a href="https://boardgamegeek.com/boardgame/128671/spartacus-game-blood-and-treachery"><strong>Spartacus: A Game of Blood and Treachery</strong> (BGG 128671)</a>.</li>
+</ul>
+</li>
+<li><strong>Enchères Combinatoires :</strong> Mises sur des paniers d'objets. L'organisateur maximise la valeur. Complexe.<ul>
+<li><em>Source :</em> <a href="https://en.wikipedia.org/wiki/Combinatorial_auction">Combinatorial Auction (Wikipedia)</a></li>
+</ul>
+</li>
+<li><strong>Enchères Simultanées Ascendantes (SAA) :</strong> Plusieurs objets, plusieurs tours. Les joueurs peuvent déplacer leurs offres.</li>
+<li><strong>Enchères Multi-Unités :</strong> Vente de plusieurs objets identiques. <strong>Prix Uniforme</strong> (tous paient le même prix, souvent l'offre gagnante la plus basse) ou <strong>Prix Discriminant / Pay-as-Bid</strong> (chacun paie son offre).</li>
+<li><strong>Enchères Doubles :</strong> Acheteurs et vendeurs soumettent offres/demandes simultanément. Transactions si coïncidence.<ul>
+<li><em>Exemple :</em> Marché des ressources dans <a href="https://boardgamegeek.com/boardgame/2651/power-grid"><strong>Power Grid</strong> (BGG 2651)</a> présente des éléments de ce type.</li>
+</ul>
+</li>
+<li><strong>Enchère Japonaise :</strong> Enchère ascendante ouverte, les joueurs se retirent explicitement.</li>
+<li><strong>Enchère Suisse :</strong> Souvent scellée. Le gagnant provisoire peut se retirer; l'objet va au suivant à son prix.</li>
+<li><strong>Enchère à Offre Unique la Plus Basse :</strong> L'offre la plus basse non dupliquée l'emporte. Souvent avec frais par offre.</li>
+<li><strong>Enchères par Procuration ("Proxy Bidding") :</strong> Soumission d'un maximum, système surenchérit automatiquement. Peut mener au "Sniping".</li>
+</ol>
+</li>
+<li>
+<p><strong>B. Minuteurs, Conditions de Fin et Pression Temporelle :</strong></p>
+<ol>
+<li><strong>Enchère à la Bougie :</strong> Fin imprévisible.</li>
+<li><strong>Enchère au Sablier / Chronomètre :</strong> Force des décisions rapides.<ul>
+<li><em>Exemple :</em> Temps limité par joueur ou phase d'enchère.</li>
+</ul>
+</li>
+<li><strong>Enchère au Cadran :</strong> Souvent pour enchères hollandaises, cadran physique indiquant le prix.</li>
+</ol>
+</li>
+<li>
+<p><strong>C. Monnaie des Enchères :</strong></p>
+<ol>
+<li><strong>Monnaies Multiples ou Uniques :</strong> Or, bois, influence, PV, actions/ouvriers (<a href="https://boardgamegeek.com/boardgame/122515/keyflower"><strong>Keyflower</strong> (BGG 122515)</a>).</li>
+<li><strong>Valeur Fluctuante :</strong> La valeur de la monnaie d'enchère peut varier.</li>
+<li><strong>Puissance d'Enchère Illimitée :</strong><ul>
+<li><em>Exemple :</em> <a href="https://boardgamegeek.com/boardgame/266830/qe"><strong>Q.E.</strong> (BGG 266830)</a>, les joueurs misent tout montant, mais le plus dépensier est éliminé.</li>
+</ul>
+</li>
+<li><strong>Jetons Spéciaux / Puissance d'Enchère Asymétrique :</strong> Jetons limités avec valeurs/pouvoirs distincts.<ul>
+<li><em>Exemple :</em> Cartes monétaires dans <a href="https://boardgamegeek.com/boardgame/220/high-society"><strong>High Society</strong> (BGG 220)</a>.</li>
+</ul>
+</li>
+<li><strong>Coûts Non Monétaires et Enchères sur des "Non-Biens" :</strong> Enchères pour ordre du tour (<a href="https://boardgamegeek.com/boardgame/93/el-grande"><strong>El Grande</strong> (BGG 93)</a>, <a href="https://boardgamegeek.com/boardgame/4098/age-steam"><strong>Age of Steam</strong> (BGG 4098)</a>), rôles, capacités.</li>
+</ol>
+</li>
+<li>
+<p><strong>D. Structure du Tour, Passe et Rôle de l'"Animateur" :</strong></p>
+<ol>
+<li><strong>Règles de Passe :</strong> Passer est-il définitif ? Peut-on revenir ?</li>
+<li><strong>Nombre de Tours :</strong> Offre unique ou multiple pour un lot.</li>
+<li><strong>Rôle de l'Animateur :</strong> Joueur initiant ou désigné gérant le flux. Neutralité ou influence possible.</li>
+</ol>
+</li>
+<li>
+<p><strong>E. Information et Visibilité :</strong></p>
+<ol>
+<li><strong>Offres Ouvertes vs. Cachées :</strong> Distinction fondamentale.</li>
+<li><strong>Connaissance Partielle :</strong> Révélation du type de monnaie, pas du montant. Dans <a href="https://boardgamegeek.com/boardgame/266830/qe"><strong>Q.E.</strong> (BGG 266830)</a>, seul l'animateur connaît toutes les offres.</li>
+<li><strong>Observation des Dépenses Passées et Ressources Restantes :</strong> Information publique (<a href="https://boardgamegeek.com/boardgame/209367/estates"><strong>The Estates</strong> (BGG 209367)</a>) ou masquée.</li>
+<li><strong>Incertitude sur la Valeur :</strong> La valeur de l'objet peut ne pas être pleinement connue.</li>
+</ol>
+</li>
+</ul>
+<h3>Phase 3 : Résolution de l'Enchère</h3>
+<p>Les conséquences se matérialisent.</p>
+<ul>
+<li><strong>A. Détermination du Vainqueur :</strong> Généralement l'offre la plus haute. Règles de départage (premier offrant, ordre du tour).<ul>
+<li><strong>Prix de Réserve :</strong> Vente si l'offre atteint un seuil.</li>
+</ul>
+</li>
+<li><strong>B. Paiement du Prix :</strong><ul>
+<li><strong>Qui Paie :</strong> Gagnant ? Tous (All-Pay) ? Dans <a href="https://boardgamegeek.com/boardgame/220/high-society"><strong>High Society</strong> (BGG 220)</a>, seul le gagnant paie, les perdants récupèrent leur mise.</li>
+<li><strong>Combien :</strong> Son offre (Premier Prix) ? Deuxième offre (Vickrey) ? Prix fixe ?</li>
+<li><strong>Payer la Différence :</strong> Gagnant paie la différence entre son offre et la seconde (banque, animateur, second enchérisseur).</li>
+<li><strong>Paiement à Qui :</strong> Banque/réserve ou autre joueur (vendeur de l'objet, ex: <a href="https://boardgamegeek.com/boardgame/118/modern-art"><strong>Modern Art</strong> (BGG 118)</a>).</li>
+</ul>
+</li>
+<li><strong>C. Sort des Mises Perdantes et Ludification de la Perte :</strong><ul>
+<li><strong>Conséquences :</strong> Perdues, retournées, partiellement (<a href="https://boardgamegeek.com/boardgame/172/sale"><strong>For Sale</strong> (BGG 172)</a> : les passeurs paient la moitié de leur dernière mise).</li>
+<li><strong>Redistribuées :</strong> L'offre du gagnant au plus petit enchérisseur, par exemple.</li>
+<li><strong>Ludifier la Perte :</strong><ul>
+<li><em>Exemple :</em> Dans <a href="https://boardgamegeek.com/boardgame/12/ra"><strong>Ra</strong> (BGG 12)</a>, conserver un disque de Soleil de haute valeur après une perte est un choix.</li>
+<li><em>Exemple :</em> Dans "All-Pay Auctions" (<a href="https://boardgamegeek.com/boardgame/128671/spartacus-game-blood-and-treachery"><strong>Spartacus: A Game of Blood and Treachery</strong> (BGG 128671)</a>, <a href="https://boardgamegeek.com/boardgame/14396/fist-dragonstones"><strong>Fist of Dragonstones</strong> (BGG 14396)</a>), le paiement universel des mises induit des coûts pour forcer des dépenses supérieures chez les autres.</li>
+<li><em>Exemple :</em> <a href="https://boardgamegeek.com/boardgame/266830/qe"><strong>Q.E.</strong> (BGG 266830)</a> et <a href="https://boardgamegeek.com/boardgame/220/high-society"><strong>High Society</strong> (BGG 220)</a> pénalisent le plus dépensier. La perte devient un risque calculé.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>D. Gestion du Lot :</strong><ul>
+<li><strong>Nature du Gain :</strong> Objet, ressources, points, pouvoir, avantage d'ordre du tour.</li>
+<li><strong>Lots Multiples/Divisibles :</strong><ul>
+<li>Gagnant prend tout ?</li>
+<li>Choix successifs (Hybride Enchère-Draft) ?</li>
+<li>"Je Coupe, Tu Choisis" : Second divise, gagnant choisit une part.</li>
+</ul>
+</li>
+<li><strong>Option d'Achat Immédiat ("Buyout") :</strong> Payer un prix fixe pour éviter l'enchère.</li>
+</ul>
+</li>
+</ul>
+<h3>Phase 4 : Variantes et Systèmes Hybrides</h3>
+<p>Innovations par superposition ou conditions uniques.</p>
+<ul>
+<li><strong>Offres de Confirmation :</strong> Après gain, reconfirmation secrète du paiement. D'autres peuvent tenter de "voler" si non-respect.</li>
+<li><strong>Joueurs Automatisés / Enchères Évolutives :</strong> Pour équilibrer, simuler un marché, introduire une IA au comportement adaptatif.</li>
+<li><strong>Élimination de Joueurs / Pénalités Externes :</strong> Modèles <a href="https://boardgamegeek.com/boardgame/266830/qe"><strong>Q.E.</strong> (BGG 266830)</a> / <a href="https://boardgamegeek.com/boardgame/220/high-society"><strong>High Society</strong> (BGG 220)</a>.</li>
+<li><strong>Enchères sur Règles / Conditions de Victoire / Méta-Enchères :</strong> Pour modifier une règle, influencer le prochain lot, ou les conditions de score.</li>
+<li><strong>Dettes et Emprunts :</strong> Permettre de miser au-delà des possessions.</li>
+<li><strong>Collusion et Alliances (Formelles ou Informelles) :</strong> Permises, interdites, ou émergentes.</li>
+<li><strong>Scores de Qualité / Prérequis :</strong> L'offre monétaire la plus haute ne gagne pas si d'autres critères ne sont pas remplis.</li>
+<li><strong>Enchère-Draft :</strong> L'enchère détermine l'ordre de sélection d'objets.</li>
+<li><strong>Enchères à Résolution Différée :</strong> Mises secrètes résolues après des événements modifiant la valeur.<ul>
+<li><em>Exemple :</em> Contrats dans <a href="https://boardgamegeek.com/boardgame/219777/clans-caledonia"><strong>Clans of Caledonia</strong> (BGG 219777)</a>.</li>
+</ul>
+</li>
+<li><strong>Mécaniques Mixtes : Fusion avec d'Autres Systèmes</strong><ul>
+<li><strong>Enchère + Gestion de Points d'Action/Ressources :</strong><ul>
+<li><em>Exemple :</em> Dans <a href="https://boardgamegeek.com/boardgame/137269/spyrium"><strong>Spyrium</strong> (BGG 137269)</a>, mises avec ouvriers qui peuvent ensuite produire ou acheter. Valeur de mise modulée par coût d'opportunité.</li>
+</ul>
+</li>
+<li><strong>Hybrides Draft/Enchère :</strong><ul>
+<li><em>Exemple :</em> <a href="https://boardgamegeek.com/boardgame/111341/great-zimbabwe"><strong>The Great Zimbabwe</strong> (BGG 111341)</a>, enchère pour un dieu détermine ordre du tour, seuil de PV, et coûts d'utilisation des spécialistes.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Systèmes d'enchères à deux tours avec confirmation et information progressive :</strong> Un mécanisme d'enchère peut se structurer en deux tours distincts. Le premier tour, basé sur une information partielle de l'objet, utilise des mises cachées. Une résolution des égalités désigne un enchérisseur principal. Ce dernier, au second tour et après révélation complète de l'objet, a l'option de confirmer sa mise initiale pour une victoire assurée ou de tenter une mise inférieure, s'exposant à une surenchère des autres participants. Les mises du second tour sont typiquement perdues par tous, tandis que celles du premier tour sont récupérées.</li>
+</ul>
+<h3>Phase 5 : Conception d'Enchères – Considérations Stratégiques, Systémiques, Psychologiques, Pratiques</h3>
+<p>Approche holistique pour un système d'enchères fonctionnel.</p>
+<ul>
+<li>
+<p><strong>Rythme, Flux, Accessibilité :</strong></p>
+<ul>
+<li><strong>Ergonomie et Efficacité ("Ludotechnique") :</strong> Dynamisme des enchères. Composants physiques (jetons, paravents, roues de mise comme dans <a href="https://boardgamegeek.com/boardgame/283355/dune"><strong>Dune</strong> (BGG 283355)</a>, ardoises comme dans <a href="https://boardgamegeek.com/boardgame/266830/qe"><strong>Q.E.</strong> (BGG 266830)</a>) et interface impactent flux et accessibilité.</li>
+<li><strong>Accessibilité Cognitive :</strong> Certaines enchères (Vickrey, All-Pay) sont exigeantes. Aides ou formats simples pour public large, ou ciblage de niche.</li>
+<li><strong>Limiter l'Analysis Paralysis et le Kingmaking :</strong> Information claire, tours chronométrés.</li>
+</ul>
+</li>
+<li>
+<p><strong>Équilibre Économique, Dynamiques Systémiques et Contrôle de l'Inflation :</strong></p>
+<ul>
+<li><strong>Économie de Base &amp; Flux de Ressources (Ouverts vs. Fermés) :</strong> Prévenir déséquilibres extrêmes.</li>
+<li><strong>Boucles de Rétroaction (Modélisation via <a href="http://www.jorisdormans.nl/machinations/">Machinations</a>) :</strong><ul>
+<li><strong>Rétroaction Positive :</strong> Avantages cumulatifs (ex: <a href="https://boardgamegeek.com/boardgame/2651/power-grid"><strong>Power Grid</strong> (BGG 2651)</a>, <a href="https://boardgamegeek.com/boardgame/209367/estates"><strong>The Estates</strong> (BGG 209367)</a>).</li>
+<li><strong>Rétroaction Négative :</strong> Mécanismes de rattrapage ou punition pour sur-enchère (ex: marché des ressources de <a href="https://boardgamegeek.com/boardgame/2651/power-grid"><strong>Power Grid</strong> (BGG 2651)</a>).</li>
+<li>Les diagrammes <a href="http://www.jorisdormans.nl/machinations/">Machinations</a> peuvent illustrer ces flux.</li>
+</ul>
+</li>
+<li><strong>Contrôle de l'Inflation/Déflation.</strong></li>
+<li><strong>Cas Limites Systémiques, Exploits :</strong><ul>
+<li><strong>Collusion Implicite ou Blocages "Zéro-Mise".</strong></li>
+<li><strong>Stratégies Dominantes / Faiblesses de Conception.</strong></li>
+<li><strong>"Sniping" dans les Enchères par Procuration.</strong></li>
+<li><strong>Entrée Gratuite + Information Imparfaite = Sur-enchère.</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Enjeux Significatifs et Évaluation Dynamique (Risque vs. Récompense) :</strong></p>
+<ul>
+<li><strong>Courbes de Valeur Révélées :</strong> Valeur perçue change avec information (<a href="https://boardgamegeek.com/boardgame/12/ra"><strong>Ra</strong> (BGG 12)</a>, <a href="https://boardgamegeek.com/boardgame/2651/power-grid"><strong>Power Grid</strong> (BGG 2651)</a>).</li>
+</ul>
+</li>
+<li>
+<p><strong>Psychologie, Styles de Joueurs, Pression Sociale :</strong></p>
+<ul>
+<li><strong>Archétypes de Joueurs (<a href="https://en.wikipedia.org/wiki/Bartle_taxonomy_of_player_types">Bartle</a>/<a href="https://nicolelazzaro.com/the-4-keys-to-fun/">Lazzaro</a>) :</strong> Les motivations varient (maximisation, domination, exploration, interaction).</li>
+<li><strong>Aversion à la Perte &amp; Biais Cognitifs :</strong> Malédiction du vainqueur, ancrage, sophisme des coûts irrécupérables.<ul>
+<li><em>Source :</em> <a href="https://fr.wikipedia.org/wiki/Aversion_%C3%A0_la_perte">Aversion à la perte (Wikipedia FR)</a></li>
+</ul>
+</li>
+<li><strong>Méta-Jeu &amp; Comportement Social Émergent :</strong> Tendances, alliances, boucs émissaires (<a href="https://boardgamegeek.com/boardgame/209367/estates"><strong>The Estates</strong> (BGG 209367)</a>, <a href="https://boardgamegeek.com/boardgame/266830/qe"><strong>Q.E.</strong> (BGG 266830)</a>, <a href="https://boardgamegeek.com/boardgame/118/modern-art"><strong>Modern Art</strong> (BGG 118)</a>) émergent des interactions.</li>
+</ul>
+</li>
+<li>
+<p><strong>Gestion de l'Information &amp; Fondements Théoriques :</strong></p>
+<ul>
+<li><strong>Perspectives de la Théorie des Jeux :</strong> <a href="https://fr.wikipedia.org/wiki/%C3%89quilibre_de_Nash">Équilibre de Nash (Wikipedia FR)</a>, "strategy-proofness" (<a href="https://en.wikipedia.org/wiki/Gibbard%E2%80%93Satterthwaite_theorem">Théorème de Gibbard-Satterthwaite (Wikipedia EN)</a>), stratégies dominées informent la conception.</li>
+</ul>
+</li>
+<li>
+<p><strong>Résonance Thématique et Conception Narrative :</strong></p>
+<ul>
+<li><strong>Cadre Ludo-Narratif :</strong> Le design peut favoriser des narrations émergentes.</li>
+<li><strong>Dilemmes Éthiques :</strong> Les enchères peuvent provoquer un comportement amoral si justifié thématiquement, ou incarner des cas de conscience.</li>
+</ul>
+</li>
+<li>
+<p><strong>Enchères à Deux Joueurs :</strong> Défis spécifiques, dynamiques souvent à somme nulle. Mécaniques dédiées ou joueurs automatisés parfois utilisés.</p>
+</li>
+<li>
+<p><strong>Interopérabilité avec d'Autres Mécaniques :</strong> Intégration et influence sur les autres systèmes du jeu.</p>
+</li>
+<li>
+<p><strong>Processus d'Itération et de Prototypage :</strong> Essentiel pour tester équilibre, flux, et fonctionnalité.</p>
+</li>
+</ul>
+<h3>Études de Cas :</h3>
+<ul>
+<li><a href="https://boardgamegeek.com/boardgame/118/modern-art"><strong>Modern Art (BGG 118)</strong></a> (Reiner Knizia) : Multiples types d'enchères, marché piloté par les joueurs, économie fermée. Joueurs acheteurs et vendeurs; enchérir influence la valeur future.</li>
+<li><a href="https://boardgamegeek.com/boardgame/122515/keyflower"><strong>Keyflower (BGG 122515)</strong></a> (Richard Breese &amp; Sebastian Bleasdale) : Intégration de placement d'ouvriers et enchères. Ouvriers (couleurs variées) pour miser sur tuiles ou les activer. Enchères ascendantes ouvertes, contraintes de couleur. Ouvriers misés perdus au profit du propriétaire/réserve.</li>
+<li><a href="https://boardgamegeek.com/boardgame/209367/estates"><strong>The Estates (BGG 209367)</strong></a> (Klaus Zoch) : Enchères ascendantes ouvertes pour placer éléments ou déterminer scoring. Tension issue d'incitations partagées et capacité de nuisance.</li>
+<li><a href="https://boardgamegeek.com/boardgame/12/ra"><strong>Ra (BGG 12)</strong></a> (Reiner Knizia) : Collection d'ensembles avec "stop-ou-encore" et jetons d'enchère à valeur fixe par époque. Conserver des jetons de haute valeur après perte est un choix stratégique.</li>
+<li><a href="https://boardgamegeek.com/boardgame/137269/spyrium"><strong>Spyrium (BGG 137269)</strong></a> (William Attia) : Hybride placement d'ouvriers/enchères. Ouvriers placés entre cartes; peuvent générer revenu ou miser/acheter. Coût d'achat influencé par autres ouvriers présents.</li>
+</ul>
+<h3>Conclusion</h3>
+<p>Les mécanismes d'enchères sont des outils polyvalents. Ils engagent les joueurs sur des plans stratégiques, économiques et psychologiques. Leur efficacité dépend de la compréhension de leurs formes, des dynamiques engendrées, de la gestion monétaire et informationnelle, de l'exploitation des facteurs systémiques et psychologiques, et de l'intégration aux objectifs du jeu, à son thème et à l'expérience joueur. Si jamais j'ai oublié quelquechose n'hesitez pas a me contacter : <a href="https://bsky.app/profile/ernaudbreissie.bsky.social">ernaudbreissie.bsky.social</a></p>
+<hr>
+<p><strong>Auction Systems in Board Games: Mechanisms, Strategies, Design</strong></p>
+<p>Auction mechanisms constitute a set of rules for allocating goods or privileges through a competitive bidding process. They can be central or subsidiary to the game structure. This document analyzes the phases, variants, and design principles of auctions.</p>
+<h3>Phase 1: Initial Setup – Economic Framework for Auctions</h3>
+<p>Initial conditions determine value, risk, and reward.</p>
+<ul>
+<li>
+<p><strong>Cost of Participation:</strong></p>
+<ul>
+<li><strong>Paid or Free Access:</strong> Participation in an auction can be free or conditioned by a cost (fixed, variable, refundable, lost, specific tokens).<ul>
+<li><em>Example:</em> Some games require an initial expenditure to participate, introducing a first cost-benefit assessment decision.</li>
+</ul>
+</li>
+<li><strong>Impact:</strong> An entry cost affects the initial valuation of the item, may deter players with few resources, or make participation more calculated.</li>
+</ul>
+</li>
+<li>
+<p><strong>Initial Resources and Bidding Power:</strong></p>
+<ul>
+<li><strong>Symmetry or Asymmetry:</strong> Players may start with equal or unequal resources (currency, auction tokens), influencing early dynamics.</li>
+<li><strong>Nature of Currency:</strong> Universal game currency or dedicated tokens (single or multiple use).<ul>
+<li><em>Example:</em> <a href="https://boardgamegeek.com/boardgame/220/high-society"><strong>High Society</strong> (BGG 220)</a> uses currency cards of fixed values, lost after use. <a href="https://boardgamegeek.com/boardgame/54998/cyclades"><strong>Cyclades</strong> (BGG 54998)</a> uses general game currency for divine favors.</li>
+</ul>
+</li>
+<li><strong>Persistence and Economic Model (Open, Closed, Semi-Closed):</strong><ul>
+<li>Is auction currency finite or renewable? Does spent money return to players (closed system, e.g., <a href="https://boardgamegeek.com/boardgame/118/modern-art"><strong>Modern Art</strong> (BGG 118)</a>), is it removed from the game (open system, risk of deflation), or a combination? This choice affects value curves and economic tension.</li>
+<li><em>Example:</em> In <a href="https://boardgamegeek.com/boardgame/12/ra"><strong>Ra</strong> (BGG 12)</a>, the Sun disks for bidding are a limited resource per epoch, periodically returning to a reserve.</li>
+</ul>
+</li>
+<li><strong>Impact:</strong> The economic model determines whether auctions are a zero-sum, positive-sum, or negative-sum game for the overall economy, influencing the propensity to spend and the perceived value of the currency itself.</li>
+</ul>
+</li>
+</ul>
+<h3>Phase 2: Auction Process</h3>
+<p>Competition manifests through various formats.</p>
+<ul>
+<li>
+<p><strong>A. Auction Formats:</strong></p>
+<ol>
+<li><strong>Open Auction (Free-for-All):</strong> Successive bids until only one bidder remains. Fast, interactive.<ul>
+<li><em>Example:</em> Property acquisition in <a href="https://boardgamegeek.com/boardgame/1406/monopoly"><strong>Monopoly</strong> (BGG 1406)</a>.</li>
+</ul>
+</li>
+<li><strong>Turn-Order Auction:</strong> Bids or passes in a fixed order. Structured, tactical passes.<ul>
+<li><em>Example:</em> Tile auctions in <a href="https://boardgamegeek.com/boardgame/12/ra"><strong>Ra</strong> (BGG 12)</a>; some types in <a href="https://boardgamegeek.com/boardgame/118/modern-art"><strong>Modern Art</strong> (BGG 118)</a>.</li>
+</ul>
+</li>
+<li><strong>Ascending Auction (English Auction):</strong> Low starting price, increasing bids. The last bidder wins.<ul>
+<li><em>Example:</em> Majority of auctions in <a href="https://boardgamegeek.com/boardgame/220/high-society"><strong>High Society</strong> (BGG 220)</a>.</li>
+</ul>
+</li>
+<li><strong>Hidden Auction (Secret / "Closed Fist" / "Blind Auction"):</strong> Secret and simultaneous bids. Tension, bluffing.<ul>
+<li><em>Example:</em> Combat in <a href="https://boardgamegeek.com/boardgame/169786/scythe"><strong>Scythe</strong> (BGG 169786)</a>; region auctions in <a href="https://boardgamegeek.com/boardgame/127023/kemet"><strong>Kemet</strong> (BGG 127023)</a>.</li>
+</ul>
+</li>
+<li><strong>Descending Auction (Dutch Auction):</strong> High starting price, decreasing. The first to accept wins.<ul>
+<li><em>Example:</em> First phase of <a href="https://boardgamegeek.com/boardgame/172/sale"><strong>For Sale</strong> (BGG 172)</a>.</li>
+</ul>
+</li>
+<li><strong>First-Price Sealed-Bid Auction:</strong> Hidden auction, winner pays their bid. Prone to the "winner's curse."<ul>
+<li><em>Example:</em> "Once around" auction in <a href="https://boardgamegeek.com/boardgame/118/modern-art"><strong>Modern Art</strong> (BGG 118)</a>.</li>
+</ul>
+</li>
+<li><strong>Second-Price Sealed-Bid Auction (Vickrey Auction):</strong> Highest bid wins, pays the amount of the second-highest bid. Theoretically incentivizes bidding true value. Rare.<ul>
+<li><em>Source:</em> <a href="https://en.wikipedia.org/wiki/Vickrey_auction">Vickrey Auction (Wikipedia)</a></li>
+</ul>
+</li>
+<li><strong>Reverse Auction:</strong> Players lower the price they are willing to accept (for a contract). Lowest bid wins.</li>
+<li><strong>Constrained Auction:</strong> Bids must follow specific rules (contract announcements in trick-taking games).</li>
+<li><strong>Elimination Auction:</strong> Bid higher or withdraw permanently, often turn by turn.</li>
+<li><strong>Hybrid Auction:</strong> Combines multiple types. <a href="https://boardgamegeek.com/boardgame/118/modern-art"><strong>Modern Art</strong> (BGG 118)</a> is an example.</li>
+<li><strong>All-Pay Auctions:</strong> All bidders pay their bid, whether they win or not. Punitive.<ul>
+<li><em>Example:</em> Gladiator auctions in <a href="https://boardgamegeek.com/boardgame/128671/spartacus-game-blood-and-treachery"><strong>Spartacus: A Game of Blood and Treachery</strong> (BGG 128671)</a>.</li>
+</ul>
+</li>
+<li><strong>Combinatorial Auctions:</strong> Bids on bundles of items. Organizer maximizes value. Complex.<ul>
+<li><em>Source:</em> <a href="https://en.wikipedia.org/wiki/Combinatorial_auction">Combinatorial Auction (Wikipedia)</a></li>
+</ul>
+</li>
+<li><strong>Simultaneous Ascending Auctions (SAA):</strong> Multiple items, multiple rounds. Players can move their bids.</li>
+<li><strong>Multi-Unit Auctions:</strong> Selling multiple identical items. <strong>Uniform Price</strong> (all pay the same price, often the lowest winning bid) or <strong>Discriminatory Price / Pay-as-Bid</strong> (each pays their bid).</li>
+<li><strong>Double Auctions:</strong> Buyers and sellers submit bids/asks simultaneously. Transactions if they match.<ul>
+<li><em>Example:</em> Resource market in <a href="https://boardgamegeek.com/boardgame/2651/power-grid"><strong>Power Grid</strong> (BGG 2651)</a> has elements of this.</li>
+</ul>
+</li>
+<li><strong>Japanese Auction:</strong> Open ascending auction, players explicitly withdraw.</li>
+<li><strong>Swiss Auction:</strong> Often sealed. Provisional winner can withdraw; item goes to the next at their bid price.</li>
+<li><strong>Lowest Unique Bid Auction:</strong> Lowest unduplicated bid wins. Often with a fee per bid.</li>
+<li><strong>Proxy Bidding / Automatic Bidding:</strong> Submission of a maximum, system auto-bids. Can lead to "sniping."</li>
+</ol>
+</li>
+<li>
+<p><strong>B. Timers, End Conditions, and Time Pressure:</strong></p>
+<ol>
+<li><strong>Candle Auction:</strong> Unpredictable end.</li>
+<li><strong>Hourglass / Timer Auction:</strong> Forces quick decisions.<ul>
+<li><em>Example:</em> Time limit per player or auction phase.</li>
+</ul>
+</li>
+<li><strong>Clock Auction:</strong> Often for Dutch auctions, physical dial showing the price.</li>
+</ol>
+</li>
+<li>
+<p><strong>C. Auction Currency:</strong></p>
+<ol>
+<li><strong>Multiple or Unique Currencies:</strong> Gold, wood, influence, VPs, actions/workers (<a href="https://boardgamegeek.com/boardgame/122515/keyflower"><strong>Keyflower</strong> (BGG 122515)</a>).</li>
+<li><strong>Fluctuating Value:</strong> The value of auction currency can change.</li>
+<li><strong>Unlimited Bidding Power:</strong><ul>
+<li><em>Example:</em> <a href="https://boardgamegeek.com/boardgame/266830/qe"><strong>Q.E.</strong> (BGG 266830)</a>, players bid any amount, but the highest spender is eliminated.</li>
+</ul>
+</li>
+<li><strong>Special Tokens / Asymmetric Bidding Power:</strong> Limited tokens with distinct values/powers.<ul>
+<li><em>Example:</em> Currency cards in <a href="https://boardgamegeek.com/boardgame/220/high-society"><strong>High Society</strong> (BGG 220)</a>.</li>
+</ul>
+</li>
+<li><strong>Non-Monetary Costs and Bidding on "Non-Goods":</strong> Bidding for turn order (<a href="https://boardgamegeek.com/boardgame/93/el-grande"><strong>El Grande</strong> (BGG 93)</a>, <a href="https://boardgamegeek.com/boardgame/4098/age-steam"><strong>Age of Steam</strong> (BGG 4098)</a>), roles, abilities.</li>
+</ol>
+</li>
+<li>
+<p><strong>D. Turn Structure, Passing, and Role of the "Auctioneer":</strong></p>
+<ol>
+<li><strong>Passing Rules:</strong> Is passing final? Can one re-enter?</li>
+<li><strong>Number of Rounds:</strong> Single or multiple bids for a lot.</li>
+<li><strong>Role of the Auctioneer:</strong> Initiating or designated player managing flow. Neutrality or influence possible.</li>
+</ol>
+</li>
+<li>
+<p><strong>E. Information and Visibility:</strong></p>
+<ol>
+<li><strong>Open vs. Hidden Bids:</strong> Fundamental distinction.</li>
+<li><strong>Partial Knowledge:</strong> Only currency type revealed, not amount. In <a href="https://boardgamegeek.com/boardgame/266830/qe"><strong>Q.E.</strong> (BGG 266830)</a>, only the auctioneer knows all bids.</li>
+<li><strong>Observation of Past Spending and Remaining Resources:</strong> Public information (<a href="https://boardgamegeek.com/boardgame/209367/estates"><strong>The Estates</strong> (BGG 209367)</a>) or hidden.</li>
+<li><strong>Value Uncertainty:</strong> The item's value may not be fully known.</li>
+</ol>
+</li>
+</ul>
+<h3>Phase 3: Auction Resolution</h3>
+<p>Consequences materialize.</p>
+<ul>
+<li><strong>A. Determining the Winner:</strong> Usually the highest bid. Tie-breaking rules (first bidder, turn order).<ul>
+<li><strong>Reserve Price:</strong> Item sold only if bid reaches a threshold.</li>
+</ul>
+</li>
+<li><strong>B. Price Payment:</strong><ul>
+<li><strong>Who Pays:</strong> Winner? Everyone (All-Pay)? In <a href="https://boardgamegeek.com/boardgame/220/high-society"><strong>High Society</strong> (BGG 220)</a>, only the winner pays; losers recover their bids.</li>
+<li><strong>How Much:</strong> Their bid (First Price)? Second bid (Vickrey)? Fixed price?</li>
+<li><strong>Pay the Difference:</strong> Winner pays the difference between their bid and the second (to bank, auctioneer, second bidder).</li>
+<li><strong>Payment To Whom:</strong> Bank/reserve or another player (item seller, e.g., <a href="https://boardgamegeek.com/boardgame/118/modern-art"><strong>Modern Art</strong> (BGG 118)</a>).</li>
+</ul>
+</li>
+<li><strong>C. Fate of Losing Bids and Gamifying Loss:</strong><ul>
+<li><strong>Consequences:</strong> Lost, returned, partially (<a href="https://boardgamegeek.com/boardgame/172/sale"><strong>For Sale</strong> (BGG 172)</a>: passers pay half their last bid).</li>
+<li><strong>Redistributed:</strong> Winner's bid to the smallest bidder, for example.</li>
+<li><strong>Gamifying Loss:</strong><ul>
+<li><em>Example:</em> In <a href="https://boardgamegeek.com/boardgame/12/ra"><strong>Ra</strong> (BGG 12)</a>, keeping a high-value Sun disk after a loss is a choice.</li>
+<li><em>Example:</em> In "All-Pay Auctions" (<a href="https://boardgamegeek.com/boardgame/128671/spartacus-game-blood-and-treachery"><strong>Spartacus: A Game of Blood and Treachery</strong> (BGG 128671)</a>, <a href="https://boardgamegeek.com/boardgame/14396/fist-dragonstones"><strong>Fist of Dragonstones</strong> (BGG 14396)</a>), universal bid payment induces costs to force higher spending from others.</li>
+<li><em>Example:</em> <a href="https://boardgamegeek.com/boardgame/266830/qe"><strong>Q.E.</strong> (BGG 266830)</a> and <a href="https://boardgamegeek.com/boardgame/220/high-society"><strong>High Society</strong> (BGG 220)</a> penalize the highest spender. Loss becomes a calculated risk.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>D. Lot Management:</strong><ul>
+<li><strong>Nature of Gain:</strong> Item, resources, points, power, turn order advantage.</li>
+<li><strong>Multiple/Divisible Lots:</strong><ul>
+<li>Winner takes all?</li>
+<li>Successive choices (Hybrid Auction-Draft)?</li>
+<li>"I Cut, You Choose": Second player divides, winner chooses a share.</li>
+</ul>
+</li>
+<li><strong>Buyout Option:</strong> Pay a fixed price to bypass the auction.</li>
+</ul>
+</li>
+</ul>
+<h3>Phase 4: Variants and Hybrid Systems</h3>
+<p>Innovations through layering or unique conditions.</p>
+<ul>
+<li><strong>Confirmation Bids:</strong> After winning, secret reconfirmation of payment. Others may try to "steal" if not met.</li>
+<li><strong>Automated Players / Evolving Auctions:</strong> To balance, simulate a market, introduce AI with adaptive behavior.</li>
+<li><strong>Player Elimination / External Penalties:</strong> <a href="https://boardgamegeek.com/boardgame/266830/qe"><strong>Q.E.</strong> (BGG 266830)</a> / <a href="https://boardgamegeek.com/boardgame/220/high-society"><strong>High Society</strong> (BGG 220)</a> models.</li>
+<li><strong>Bidding on Rules / Victory Conditions / Meta-Auctions:</strong> To change a rule, influence the next lot, or scoring conditions.</li>
+<li><strong>Debts and Loans:</strong> Allowing bids beyond possessions.</li>
+<li><strong>Collusion and Alliances (Formal or Informal):</strong> Permitted, forbidden, or emergent.</li>
+<li><strong>Quality Scores / Prerequisites:</strong> Highest monetary bid doesn't win if other criteria aren't met.</li>
+<li><strong>Auction-Draft:</strong> Auction determines item selection order.</li>
+<li><strong>Delayed Resolution Auctions:</strong> Secret bids resolved after value-altering events.<ul>
+<li><em>Example:</em> Contracts in <a href="https://boardgamegeek.com/boardgame/219777/clans-caledonia"><strong>Clans of Caledonia</strong> (BGG 219777)</a>.</li>
+</ul>
+</li>
+<li><strong>Mixed Mechanics: Merging with Other Systems</strong><ul>
+<li><strong>Auction + Action Point/Resource Management:</strong><ul>
+<li><em>Example:</em> In <a href="https://boardgamegeek.com/boardgame/137269/spyrium"><strong>Spyrium</strong> (BGG 137269)</a>, bids with workers who can then produce or buy. Bid value modulated by opportunity cost.</li>
+</ul>
+</li>
+<li><strong>Draft/Auction Hybrids:</strong><ul>
+<li><em>Example:</em> <a href="https://boardgamegeek.com/boardgame/111341/great-zimbabwe"><strong>The Great Zimbabwe</strong> (BGG 111341)</a>, bidding for a god determines turn order, VP threshold, and specialist usage costs.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Two-round auction systems with confirmation and progressive information :</strong> An auction mechanism can be structured in two distinct rounds. The first round, based on partial item information, uses hidden bids. Tie resolution designates a lead bidder. This lead bidder, in the second round and after full item revelation, has the option to confirm their initial bid for a guaranteed win or attempt a lower bid, risking being outbid by other participants. Second-round bids are typically lost by all, while first-round bids are recovered.</li>
+</ul>
+<h3>Phase 5: Designing Auctions – Strategic, Systemic, Psychological, Practical Considerations</h3>
+<p>A holistic approach for a functional auction system.</p>
+<ul>
+<li>
+<p><strong>Pacing, Flow, Accessibility:</strong></p>
+<ul>
+<li><strong>Ergonomics and Efficiency ("Ludotechnique"):</strong> Auction dynamics. Physical components (tokens, screens, bid wheels like in <a href="https://boardgamegeek.com/boardgame/283355/dune"><strong>Dune</strong> (BGG 283355)</a>, slates like in <a href="https://boardgamegeek.com/boardgame/266830/qe"><strong>Q.E.</strong> (BGG 266830)</a>) and interface impact flow and accessibility.</li>
+<li><strong>Cognitive Accessibility:</strong> Some auctions (Vickrey, All-Pay) are demanding. Aids or simpler formats for a broad audience, or niche targeting.</li>
+<li><strong>Limiting Analysis Paralysis and Kingmaking:</strong> Clear information, timed turns.</li>
+</ul>
+</li>
+<li>
+<p><strong>Economic Balance, Systemic Dynamics, and Inflation Control:</strong></p>
+<ul>
+<li><strong>Base Economy &amp; Resource Flows (Open vs. Closed):</strong> Prevent extreme imbalances.</li>
+<li><strong>Feedback Loops (Modeling via <a href="http://www.jorisdormans.nl/machinations/">Machinations</a>)</strong>:<ul>
+<li><strong>Positive Feedback:</strong> Cumulative advantages (e.g., <a href="https://boardgamegeek.com/boardgame/2651/power-grid"><strong>Power Grid</strong> (BGG 2651)</a>, <a href="https://boardgamegeek.com/boardgame/209367/estates"><strong>The Estates</strong> (BGG 209367)</a>).</li>
+<li><strong>Negative Feedback:</strong> Catch-up mechanisms or punishment for overbidding (e.g., resource market in <a href="https://boardgamegeek.com/boardgame/2651/power-grid"><strong>Power Grid</strong> (BGG 2651)</a>).</li>
+<li><a href="http://www.jorisdormans.nl/machinations/">Machinations</a> diagrams can illustrate these flows.</li>
+</ul>
+</li>
+<li><strong>Inflation/Deflation Control.</strong></li>
+<li><strong>Systemic Edge Cases, Exploits:</strong><ul>
+<li><strong>Implicit Collusion or "Zero-Bid" Stalls.</strong></li>
+<li><strong>Dominant Strategies / Design Flaws.</strong></li>
+<li><strong>"Sniping" in Proxy Bidding.</strong></li>
+<li><strong>Free Entry + Imperfect Information = Overbidding.</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Significant Stakes and Dynamic Valuation (Risk vs. Reward):</strong></p>
+<ul>
+<li><strong>Revealed Value Curves:</strong> Perceived value changes with information (<a href="https://boardgamegeek.com/boardgame/12/ra"><strong>Ra</strong> (BGG 12)</a>, <a href="https://boardgamegeek.com/boardgame/2651/power-grid"><strong>Power Grid</strong> (BGG 2651)</a>).</li>
+</ul>
+</li>
+<li>
+<p><strong>Psychology, Player Styles, Social Pressure:</strong></p>
+<ul>
+<li><strong>Player Archetypes (<a href="https://en.wikipedia.org/wiki/Bartle_taxonomy_of_player_types">Bartle</a>/<a href="https://nicolelazzaro.com/the-4-keys-to-fun/">Lazzaro</a>)</strong>: Motivations vary (maximization, domination, exploration, interaction).</li>
+<li><strong>Loss Aversion &amp; Cognitive Biases:</strong> Winner's curse, anchoring, sunk cost fallacy.<ul>
+<li><em>Source:</em> <a href="https://fr.wikipedia.org/wiki/Aversion_%C3%A0_la_perte">Loss Aversion (Wikipedia FR)</a></li>
+</ul>
+</li>
+<li><strong>Meta-Game &amp; Emergent Social Behavior:</strong> Trends, alliances, scapegoating (<a href="https://boardgamegeek.com/boardgame/209367/estates"><strong>The Estates</strong> (BGG 209367)</a>, <a href="https://boardgamegeek.com/boardgame/266830/qe"><strong>Q.E.</strong> (BGG 266830)</a>, <a href="https://boardgamegeek.com/boardgame/118/modern-art"><strong>Modern Art</strong> (BGG 118)</a>) emerge from interactions.</li>
+</ul>
+</li>
+<li>
+<p><strong>Information Management &amp; Theoretical Foundations:</strong></p>
+<ul>
+<li><strong>Game Theory Perspectives:</strong> <a href="https://fr.wikipedia.org/wiki/%C3%89quilibre_de_Nash">Nash Equilibrium (Wikipedia FR)</a>, "strategy-proofness" (<a href="https://en.wikipedia.org/wiki/Gibbard%E2%80%93Satterthwaite_theorem">Gibbard-Satterthwaite Theorem (Wikipedia EN)</a>), dominated strategies inform design.</li>
+</ul>
+</li>
+<li>
+<p><strong>Thematic Resonance and Narrative Design:</strong></p>
+<ul>
+<li><strong>Ludo-Narrative Framework:</strong> Design can foster emergent narratives.</li>
+<li><strong>Ethical Dilemmas:</strong> Auctions can provoke amoral behavior if thematically justified, or embody moral quandaries.</li>
+</ul>
+</li>
+<li>
+<p><strong>Two-Player Auctions:</strong> Specific challenges, often zero-sum dynamics. Dedicated mechanics or automated players sometimes used.</p>
+</li>
+<li>
+<p><strong>Interoperability with Other Mechanics:</strong> Integration and influence on other game systems.</p>
+</li>
+<li>
+<p><strong>Iteration and Prototyping Process:</strong> Essential for testing balance, flow, and functionality.</p>
+</li>
+</ul>
+<h3>Case Studies:</h3>
+<ul>
+<li><a href="https://boardgamegeek.com/boardgame/118/modern-art"><strong>Modern Art (BGG 118)</strong></a> (Reiner Knizia): Multiple auction types, player-driven market, closed economy. Players are buyers and sellers; bidding influences future value.</li>
+<li><a href="https://boardgamegeek.com/boardgame/122515/keyflower"><strong>Keyflower (BGG 122515)</strong></a> (Richard Breese &amp; Sebastian Bleasdale): Integrates worker placement and auctions. Workers (various colors) bid for tiles or activate them. Open ascending auctions, color constraints. Bid workers lost to tile owner/reserve.</li>
+<li><a href="https://boardgamegeek.com/boardgame/209367/estates"><strong>The Estates (BGG 209367)</strong></a> (Klaus Zoch): Open ascending auctions to place elements or determine scoring. Tension from shared incentives and capacity for harm.</li>
+<li><a href="https://boardgamegeek.com/boardgame/12/ra"><strong>Ra (BGG 12)</strong></a> (Reiner Knizia): Set collection with "push-your-luck" and fixed-value auction tokens per epoch. Keeping high-value tokens after a loss is a key strategic decision.</li>
+<li><a href="https://boardgamegeek.com/boardgame/137269/spyrium"><strong>Spyrium (BGG 137269)</strong></a> (William Attia): Unique worker placement/auction hybrid. Workers placed between cards; can generate income or bid/buy. Purchase cost influenced by other workers present.</li>
+</ul>
+<h3>Conclusion</h3>
+<p>Auction mechanisms are versatile tools. They engage players on strategic, economic, and psychological levels. Their effectiveness depends on understanding their forms, the dynamics they generate, monetary and information management, exploitation of systemic and psychological factors, and integration with the game's objectives, theme, and intended player experience. If i forgot something contact me : <a href="https://bsky.app/profile/ernaudbreissie.bsky.social">ernaudbreissie.bsky.social</a></p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="https://ernaud-breissie.github.io/thoughts/betrayal-of-the-implicit-contract.html" rel="bookmark"
+                           title="Permalink to Betrayal of the implicit contract">Betrayal  of the implicit contract</a></h1>
+                </header>
+
+                <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2025-05-13T09:20:00+02:00">
                 Published: mar. 13 mai 2025
@@ -32,29 +619,12 @@
         </address>
 <p>In <a href="https://ernaud-breissie.github.io/thoughts/category/gamedesign.html">Gamedesign</a>.</p>
 <p>tags: <a href="https://ernaud-breissie.github.io/thoughts/tag/implicit.html">implicit</a> <a href="https://ernaud-breissie.github.io/thoughts/tag/society.html">society</a> <a href="https://ernaud-breissie.github.io/thoughts/tag/convention.html">convention</a> </p>
-</footer><!-- /.post-info --><p>English version after the french one</p>
+</footer><!-- /.post-info -->                <p>English version after the french one</p>
 <h2>La Confiance Aveugle : Quand le Jeu de Société S'inspire de la Trahison Narrative</h2>
-<p><strong>Cet article a été inspiré de cet épisode</strong> : <a href="https://www.lepointdepolgara.fr/index.php/2025/05/01/pelleter-des-nuages-06-cardboard-ghosts-lesprit-du-jeu/">https://www.lepointdepolgara.fr/index.php/2025/05/01/pelleter-des-nuages-06-cardboard-ghosts-lesprit-du-jeu/</a>, notamment de ce passage : « Dans cette chronique, Christian revient sur sa lecture de l’essai <em>Cardboard Ghosts: Using Physical Games to Model and Critique Systems</em> de Amabel Holland. » Il s’inspire donc également du livre d’Amabel Holland : <a href="https://www.taylorfrancis.com/books/mono/10.1201/9781003500834/cardboard-ghosts-amabel-holland">https://www.taylorfrancis.com/books/mono/10.1201/9781003500834/cardboard-ghosts-amabel-holland</a>, de sa vidéo : <a href="https://www.youtube.com/watch?v=wG4zLcKsCiA">https://www.youtube.com/watch?v=wG4zLcKsCiA</a>, ainsi que de son site de publication de jeux et de ses créations : <a href="https://hollandspiele.com/collections/amabel-holland">https://hollandspiele.com/collections/amabel-holland</a>.</p>
-<p>Ouvrir une nouvelle boîte de jeu de société est un rituel empreint d'une confiance presque enfantine. On déballe le matériel, on admire les illustrations, et surtout, on se plonge dans le livret de règles. Et c'est là qu'opère une magie silencieuse : nous faisons une confiance absolue à l'auteur. Nous partons du principe que les règles, aussi complexes ou simples soient-elles, sont énoncées avec sincérité. Bien sûr, un jeu peut s'avérer déséquilibré, une stratégie dominante peut émerger, un hasard trop présent peut frustrer. Mais jamais, ou très rarement, nous ne nous disons : "L'auteur cherche à me piéger" ou "Ces règles sont volontairement truquées contre moi sans que je le sache." Nous attribuons les failles à des erreurs de conception, à un manque de playtesting, mais pas à une malveillance délibérée.</p>
-<p>Cette confiance implicite n'est pas sans rappeler certaines conventions littéraires. Prenons l'exemple d'un fameux roman d'Agatha Christie, celui qui a secoué le monde du polar en son temps. Avant sa publication, il existait une règle tacite, un contrat moral entre l'auteur de roman policier et son lecteur : le narrateur, celui qui nous guide à travers l'intrigue, ne pouvait être l'assassin. Il était le garant d'une certaine objectivité, le témoin privilégié à travers lequel nous découvrions la vérité. En brisant cette convention, l'auteure a non seulement créé un coup de théâtre magistral, mais a aussi interrogé la nature même de la narration et de la confiance que nous lui accordons. Le lecteur s'est senti floué, trahi, mais aussi admiratif devant tant d'audace.</p>
-<p>Alors, pourquoi ne pas transposer cette audace dans le monde du jeu de société ? Pourquoi un auteur n'utiliserait-il pas cette confiance intrinsèque pour créer une expérience ludique déroutante, voire dérangeante, mais profondément marquante ?</p>
-<p>Imaginons un jeu où l'on vous promet une compétition équitable, une "méritocratie" ludique où le plus malin ou le plus stratégique l'emportera. Prenons l'exemple d'un jeu simulant la création d'un parti politique. En théorie, les règles vous expliquent que chaque joueur a les mêmes chances : récolter des fonds, mobiliser des militants, proposer des idées, gagner en visibilité médiatique. Vous vous lancez, plein d'espoir, pensant que votre stratégie sera la bonne. Mais partie après partie, vous échouez. Vous avez l'impression de vous heurter à un mur invisible. Vous avez beau optimiser vos actions, vos adversaires (ou le jeu lui-même, s'il est coopératif ou solo) semblent toujours avoir un avantage insaisissable. Vous vous remettez en question, vous doutez de vos capacités, vous accusez le hasard. La réalité, cachée par l'auteur, serait que le système est truqué dès le départ. Par exemple, les coûts réels pour imprimer des bulletins de vote sont exponentiels et non linéaires comme indiqué subtilement dans une règle annexe. Ou encore, l'accès aux médias est conditionné par un critère que vous ne pouvez objectivement pas remplir avec les ressources de départ, créant un plafond de verre. Vous êtes dans une illusion de contrôle, une méritocratie de façade, exactement comme dans certaines situations de la vie réelle où des barrières systémiques invisibles freinent les ambitions légitimes.</p>
-<p>Ou encore, prenons un jeu d'enchères. Au départ, les règles semblent offrir un semblant d'équilibre : un joueur commence avec une somme d'argent manifestement supérieure aux autres, mais ces derniers reçoivent un set de "cartes ruse" – des capacités spéciales à usage unique censées pouvoir contrer la puissance financière. Les joueurs moins fortunés se disent qu'avec de la jugeote et un bon timing de leurs cartes, ils pourront tirer leur épingle du jeu. Mais rapidement, la dure réalité s'impose : les cartes ruse, bien que temporairement utiles, sont un emplâtre sur une jambe de bois face à la capacité du joueur riche à simplement surenchérir sur tout ce qui a de la valeur. Chaque enchère importante est remportée par le capital, les ruses ne faisant que retarder l'inévitable, ou offrant des victoires mineures et dérisoires. Le but ici est de faire ressentir de manière viscérale la brutalité d'un monopole, l'impuissance face à une accumulation de richesse qui écrase toute tentative de concurrence équitable, même lorsque l'on pense détenir des "outils" pour lutter.</p>
-<p>Puis, après plusieurs échecs cuisants, après avoir ressenti cette frustration, cette injustice, que ce soit dans la course politique ou face au magnat des enchères, le jeu vous inviterait à ouvrir une enveloppe scellée. À l'intérieur, la révélation : une explication du déséquilibre initial, peut-être même des règles additionnelles ou des composants (des cartes ruses enfin efficaces et mises à jour, des subventions pour le parti politique) qui, cette fois, équilibreraient véritablement la partie. Ou alors, l'enveloppe pourrait révéler une vérité plus déstabilisante encore : que la lutte à armes égales sur ce terrain miné est vouée à l'échec. Elle pourrait alors proposer une nouvelle approche : des cartes "Manifestation", "Désobéissance Civile" ou "Guérilla Médiatique" qui permettent de contourner les règles établies, de créer du désordre, de changer radicalement les conditions de la victoire, voire d'introduire une forme d'asymétrie où les objectifs et les moyens diffèrent fondamentalement. L'enveloppe expliquerait que face à un système intrinsèquement injuste ou à un adversaire jouissant d'un monopole écrasant, s'en tenir aux règles convenues ne mène qu'à la défaite. Il faut alors s'affranchir de certaines conventions, adopter des tactiques asymétriques, pour espérer déstabiliser l'ordre établi et avoir une chance de renverser la vapeur. Le but n'est pas de vous faire perdre pour le plaisir, mais de vous faire vivre l'expérience d'un système inéquitable, de ressentir l'impuissance face à des règles du jeu qui ne sont pas celles que l'on croit, et de réfléchir aux stratégies de contournement. L'ouverture de l'enveloppe serait alors une catharsis, une prise de conscience.</p>
-<hr>
-<h2>Blind Trust: When Board Games Draw Inspiration from Narrative Betrayal</h2>
-<p><strong>This article was inspired by this episode</strong>: <a href="https://www.lepointdepolgara.fr/index.php/2025/05/01/pelleter-des-nuages-06-cardboard-ghosts-lesprit-du-jeu/">https://www.lepointdepolgara.fr/index.php/2025/05/01/pelleter-des-nuages-06-cardboard-ghosts-lesprit-du-jeu/</a>, particularly the following passage: “In this column, Christian reflects on his reading of the essay <em>Cardboard Ghosts: Using Physical Games to Model and Critique Systems</em> by Amabel Holland.” It is therefore also based on Amabel Holland’s book: <a href="https://www.taylorfrancis.com/books/mono/10.1201/9781003500834/cardboard-ghosts-amabel-holland">https://www.taylorfrancis.com/books/mono/10.1201/9781003500834/cardboard-ghosts-amabel-holland</a>, her video: <a href="https://www.youtube.com/watch?v=wG4zLcKsCiA">https://www.youtube.com/watch?v=wG4zLcKsCiA</a>, as well as her game publishing site and her designs: <a href="https://hollandspiele.com/collections/amabel-holland">https://hollandspiele.com/collections/amabel-holland</a>.</p>
-<p>Opening a new board game box is a ritual imbued with almost childlike trust. We unbox the components, admire the artwork, and above all, dive into the rulebook. And it's here that a silent magic operates: we place absolute trust in the author. We assume that the rules, however complex or simple, are stated sincerely. Of course, a game might prove to be unbalanced, a dominant strategy might emerge, or too much randomness can be frustrating. But never, or very rarely, do we tell ourselves: "The author is trying to trap me," or "These rules are deliberately rigged against me without my knowledge." We attribute flaws to design errors, a lack of playtesting, but not to deliberate malice.</p>
-<p>This implicit trust is reminiscent of certain literary conventions. Take the example of a famous Agatha Christie novel, one that shook the detective fiction world at the time. Before its publication, there was a tacit rule, a moral contract between the crime novelist and their reader: the narrator, the one guiding us through the plot, could not be the murderer. They were the guarantor of a certain objectivity, the privileged witness through whom we discovered the truth. By breaking this convention, the author not only created a masterful plot twist but also questioned the very nature of narration and the trust we place in it. The reader felt deceived, betrayed, but also admiring of such audacity.</p>
-<p>So, why not transpose this audacity to the world of board games? Why wouldn't an author use this intrinsic trust to create a bewildering, even unsettling, but profoundly memorable gaming experience?</p>
-<p>Imagine a game that promises fair competition, a ludic "meritocracy" where the smartest or most strategic player will prevail. Take the example of a game simulating the creation of a political party. In theory, the rules explain that each player has the same chances: raise funds, mobilize activists, propose ideas, gain media visibility. You dive in, full of hope, thinking your strategy will be the right one. But game after game, you fail. You feel like you're hitting an invisible wall. No matter how much you optimize your actions, your opponents (or the game itself, if it's cooperative or solo) always seem to have an elusive advantage. You question yourself, doubt your abilities, blame luck. The reality, hidden by the author, would be that the system is rigged from the start. For example, the real costs of printing ballots are exponential, not linear as subtly indicated in an appendix rule. Or, media access is conditioned by a criterion you objectively cannot meet with your starting resources, creating a glass ceiling. You are in an illusion of control, a façade of meritocracy, just like in some real-life situations where invisible systemic barriers hinder legitimate ambitions.</p>
-<p>Or, consider an auction game. Initially, the rules seem to offer a semblance of balance: one player starts with a significantly larger sum of money than the others, but the latter receive a set of "trick cards" – special single-use abilities supposedly able to counter financial power. The less wealthy players tell themselves that with shrewdness and good timing of their cards, they can pull through. But soon, the harsh reality sets in: the trick cards, though temporarily useful, are a mere superficial fix when faced with the rich player's ability to simply outbid everyone on anything of value. Every important auction is won by capital, the tricks merely delaying the inevitable or offering minor, derisory victories. The goal here is to make one viscerally feel the brutality of a monopoly, the powerlessness against an accumulation of wealth that crushes any attempt at fair competition, even when one believes they have "tools" to fight back.</p>
-<p>Then, after several crushing defeats, after experiencing this frustration, this injustice, whether in the political race or against the auction magnate, the game would invite you to open a sealed envelope. Inside, the revelation: an explanation of the initial imbalance, perhaps even additional rules or components (finally effective and updated trick cards, subsidies for the political party) that, this time, would truly balance the game. Or perhaps, the envelope could reveal an even more unsettling truth: that fighting on equal terms on this treacherous playing field is doomed to failure. It could then propose a new approach: "Protest" cards, "Civil Disobedience" cards, or "Media Guerrilla" cards that allow you to circumvent the established rules, to create disorder, to radically change the victory conditions, or even to introduce a form of asymmetry where objectives and means differ fundamentally. The envelope would explain that when facing an inherently unjust system or an opponent enjoying an overwhelming monopoly, sticking to the agreed-upon rules only leads to defeat. It is then necessary to break free from certain conventions, to adopt asymmetric tactics, to hope to destabilize the established order and have a chance to turn the tide. The goal is not to make you lose for the sake of it, but to make you experience an unfair system, to feel the helplessness in the face of game rules that are not what you believe them to be, and to reflect on strategies for circumvention. Opening the envelope would then be a catharsis, an awakening.</p>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
+<p><strong>Cet article a été inspiré de cet épisode</strong> : <a href="https://www.lepointdepolgara.fr/index.php/2025/05/01/pelleter-des-nuages-06-cardboard-ghosts-lesprit-du-jeu/">https://www.lepointdepolgara.fr/index.php/2025/05/01/pelleter-des-nuages-06-cardboard-ghosts-lesprit-du-jeu/</a>, notamment de ce passage : « Dans cette chronique, Christian revient sur sa lecture de …</p>
+                <a class="readmore" href="https://ernaud-breissie.github.io/thoughts/betrayal-of-the-implicit-contract.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
 
             <li><article class="hentry">
                 <header>
@@ -249,30 +819,6 @@
                 <a class="readmore" href="https://ernaud-breissie.github.io/thoughts/success-attack-card-with-a-cost.html">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="https://ernaud-breissie.github.io/thoughts/escalation-die.html" rel="bookmark"
-                           title="Permalink to Escalation Die">Escalation Die</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2024-01-29T08:20:00+01:00">
-                Published: lun. 29 janvier 2024
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="https://ernaud-breissie.github.io/thoughts/author/ernaud-breissie.html">Ernaud Breissie</a>
-        </address>
-<p>In <a href="https://ernaud-breissie.github.io/thoughts/category/gamedesign.html">Gamedesign</a>.</p>
-<p>tags: <a href="https://ernaud-breissie.github.io/thoughts/tag/mecanique.html">mecanique</a> <a href="https://ernaud-breissie.github.io/thoughts/tag/mechanism.html">mechanism</a> <a href="https://ernaud-breissie.github.io/thoughts/tag/gamedesign.html">gamedesign</a> <a href="https://ernaud-breissie.github.io/thoughts/tag/trpg.html">trpg</a> <a href="https://ernaud-breissie.github.io/thoughts/tag/rpg.html">rpg</a> <a href="https://ernaud-breissie.github.io/thoughts/tag/dice.html">dice</a> <a href="https://ernaud-breissie.github.io/thoughts/tag/hit.html">hit</a> <a href="https://ernaud-breissie.github.io/thoughts/tag/bonus.html">bonus</a> <a href="https://ernaud-breissie.github.io/thoughts/tag/combat.html">combat</a> </p>
-</footer><!-- /.post-info -->                <p><a href="#Version_française">Version française ici</a></p>
-<p>Escalation Die :</p>
-<p>In each combat round after the first one, a six-sided die (1d6) is used to mark the bonus for both hitting and damage. Thus, there is no bonus to hit and damage in the first round, a +1 bonus to both hit and damage in …</p>
-                <a class="readmore" href="https://ernaud-breissie.github.io/thoughts/escalation-die.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
                 </ol><!-- /#posts-list -->
   <nav>
     <ul>
@@ -292,13 +838,133 @@
                         </ul>
                         <ul class="tagcloud">
         <li class="tag-4">
-            <a href="https://ernaud-breissie.github.io/thoughts/tag/cost.html">
-            cost
+            <a href="https://ernaud-breissie.github.io/thoughts/tag/reflexions.html">
+            reflexions
+            </a>
+        </li>
+        <li class="tag-4">
+            <a href="https://ernaud-breissie.github.io/thoughts/tag/tree.html">
+            tree
+            </a>
+        </li>
+        <li class="tag-4">
+            <a href="https://ernaud-breissie.github.io/thoughts/tag/implicit.html">
+            implicit
+            </a>
+        </li>
+        <li class="tag-4">
+            <a href="https://ernaud-breissie.github.io/thoughts/tag/immersion.html">
+            immersion
+            </a>
+        </li>
+        <li class="tag-3">
+            <a href="https://ernaud-breissie.github.io/thoughts/tag/bonus.html">
+            bonus
+            </a>
+        </li>
+        <li class="tag-4">
+            <a href="https://ernaud-breissie.github.io/thoughts/tag/techtree.html">
+            techtree
+            </a>
+        </li>
+        <li class="tag-4">
+            <a href="https://ernaud-breissie.github.io/thoughts/tag/convention.html">
+            convention
+            </a>
+        </li>
+        <li class="tag-4">
+            <a href="https://ernaud-breissie.github.io/thoughts/tag/corruption.html">
+            corruption
+            </a>
+        </li>
+        <li class="tag-4">
+            <a href="https://ernaud-breissie.github.io/thoughts/tag/tcg.html">
+            tcg
+            </a>
+        </li>
+        <li class="tag-3">
+            <a href="https://ernaud-breissie.github.io/thoughts/tag/auction.html">
+            auction
+            </a>
+        </li>
+        <li class="tag-4">
+            <a href="https://ernaud-breissie.github.io/thoughts/tag/enchere.html">
+            enchere
+            </a>
+        </li>
+        <li class="tag-1">
+            <a href="https://ernaud-breissie.github.io/thoughts/tag/mechanism.html">
+            mechanism
+            </a>
+        </li>
+        <li class="tag-3">
+            <a href="https://ernaud-breissie.github.io/thoughts/tag/crpg.html">
+            crpg
+            </a>
+        </li>
+        <li class="tag-1">
+            <a href="https://ernaud-breissie.github.io/thoughts/tag/gamedesign.html">
+            gamedesign
+            </a>
+        </li>
+        <li class="tag-4">
+            <a href="https://ernaud-breissie.github.io/thoughts/tag/contact.html">
+            contact
+            </a>
+        </li>
+        <li class="tag-4">
+            <a href="https://ernaud-breissie.github.io/thoughts/tag/npc.html">
+            npc
+            </a>
+        </li>
+        <li class="tag-1">
+            <a href="https://ernaud-breissie.github.io/thoughts/tag/mecanique.html">
+            mecanique
+            </a>
+        </li>
+        <li class="tag-4">
+            <a href="https://ernaud-breissie.github.io/thoughts/tag/dice.html">
+            dice
+            </a>
+        </li>
+        <li class="tag-4">
+            <a href="https://ernaud-breissie.github.io/thoughts/tag/fr.html">
+            fr
+            </a>
+        </li>
+        <li class="tag-4">
+            <a href="https://ernaud-breissie.github.io/thoughts/tag/achat.html">
+            achat
+            </a>
+        </li>
+        <li class="tag-4">
+            <a href="https://ernaud-breissie.github.io/thoughts/tag/hit.html">
+            hit
             </a>
         </li>
         <li class="tag-4">
             <a href="https://ernaud-breissie.github.io/thoughts/tag/society.html">
             society
+            </a>
+        </li>
+        <li class="tag-2">
+            <a href="https://ernaud-breissie.github.io/thoughts/tag/combat.html">
+            combat
+            </a>
+        </li>
+        <li class="tag-4">
+            <a href="https://ernaud-breissie.github.io/thoughts/tag/tactical.html">
+            tactical
+            </a>
+        </li>
+        <li class="tag-3">
+            <a href="https://ernaud-breissie.github.io/thoughts/tag/trpg.html">
+            trpg
+            </a>
+        </li>
+        <li class="tag-4">
+            <a href="https://ernaud-breissie.github.io/thoughts/tag/upgrade.html">
+            upgrade
             </a>
         </li>
         <li class="tag-3">
@@ -312,73 +978,8 @@
             </a>
         </li>
         <li class="tag-4">
-            <a href="https://ernaud-breissie.github.io/thoughts/tag/counterattack.html">
-            counterattack
-            </a>
-        </li>
-        <li class="tag-1">
-            <a href="https://ernaud-breissie.github.io/thoughts/tag/gamedesign.html">
-            gamedesign
-            </a>
-        </li>
-        <li class="tag-4">
-            <a href="https://ernaud-breissie.github.io/thoughts/tag/immersion.html">
-            immersion
-            </a>
-        </li>
-        <li class="tag-4">
-            <a href="https://ernaud-breissie.github.io/thoughts/tag/tactical.html">
-            tactical
-            </a>
-        </li>
-        <li class="tag-4">
-            <a href="https://ernaud-breissie.github.io/thoughts/tag/victory.html">
-            victory
-            </a>
-        </li>
-        <li class="tag-4">
-            <a href="https://ernaud-breissie.github.io/thoughts/tag/implicit.html">
-            implicit
-            </a>
-        </li>
-        <li class="tag-4">
-            <a href="https://ernaud-breissie.github.io/thoughts/tag/techtree.html">
-            techtree
-            </a>
-        </li>
-        <li class="tag-4">
-            <a href="https://ernaud-breissie.github.io/thoughts/tag/enchere.html">
-            enchere
-            </a>
-        </li>
-        <li class="tag-4">
-            <a href="https://ernaud-breissie.github.io/thoughts/tag/tcg.html">
-            tcg
-            </a>
-        </li>
-        <li class="tag-4">
-            <a href="https://ernaud-breissie.github.io/thoughts/tag/quest.html">
-            quest
-            </a>
-        </li>
-        <li class="tag-4">
-            <a href="https://ernaud-breissie.github.io/thoughts/tag/videogame.html">
-            videogame
-            </a>
-        </li>
-        <li class="tag-4">
-            <a href="https://ernaud-breissie.github.io/thoughts/tag/jrpg.html">
-            jrpg
-            </a>
-        </li>
-        <li class="tag-4">
-            <a href="https://ernaud-breissie.github.io/thoughts/tag/fr.html">
-            fr
-            </a>
-        </li>
-        <li class="tag-4">
-            <a href="https://ernaud-breissie.github.io/thoughts/tag/reflexions.html">
-            reflexions
+            <a href="https://ernaud-breissie.github.io/thoughts/tag/decbuilder.html">
+            decbuilder
             </a>
         </li>
         <li class="tag-4">
@@ -387,68 +988,18 @@
             </a>
         </li>
         <li class="tag-4">
-            <a href="https://ernaud-breissie.github.io/thoughts/tag/convention.html">
-            convention
+            <a href="https://ernaud-breissie.github.io/thoughts/tag/quest.html">
+            quest
             </a>
         </li>
         <li class="tag-4">
-            <a href="https://ernaud-breissie.github.io/thoughts/tag/contact.html">
-            contact
+            <a href="https://ernaud-breissie.github.io/thoughts/tag/counterattack.html">
+            counterattack
             </a>
         </li>
         <li class="tag-4">
-            <a href="https://ernaud-breissie.github.io/thoughts/tag/npc.html">
-            npc
-            </a>
-        </li>
-        <li class="tag-2">
-            <a href="https://ernaud-breissie.github.io/thoughts/tag/combat.html">
-            combat
-            </a>
-        </li>
-        <li class="tag-4">
-            <a href="https://ernaud-breissie.github.io/thoughts/tag/dice.html">
-            dice
-            </a>
-        </li>
-        <li class="tag-4">
-            <a href="https://ernaud-breissie.github.io/thoughts/tag/decbuilder.html">
-            decbuilder
-            </a>
-        </li>
-        <li class="tag-3">
-            <a href="https://ernaud-breissie.github.io/thoughts/tag/trpg.html">
-            trpg
-            </a>
-        </li>
-        <li class="tag-1">
-            <a href="https://ernaud-breissie.github.io/thoughts/tag/mecanique.html">
-            mecanique
-            </a>
-        </li>
-        <li class="tag-4">
-            <a href="https://ernaud-breissie.github.io/thoughts/tag/upgrade.html">
-            upgrade
-            </a>
-        </li>
-        <li class="tag-4">
-            <a href="https://ernaud-breissie.github.io/thoughts/tag/hit.html">
-            hit
-            </a>
-        </li>
-        <li class="tag-4">
-            <a href="https://ernaud-breissie.github.io/thoughts/tag/jv.html">
-            jv
-            </a>
-        </li>
-        <li class="tag-1">
-            <a href="https://ernaud-breissie.github.io/thoughts/tag/mechanism.html">
-            mechanism
-            </a>
-        </li>
-        <li class="tag-4">
-            <a href="https://ernaud-breissie.github.io/thoughts/tag/auction.html">
-            auction
+            <a href="https://ernaud-breissie.github.io/thoughts/tag/rules.html">
+            rules
             </a>
         </li>
         <li class="tag-4">
@@ -457,28 +1008,13 @@
             </a>
         </li>
         <li class="tag-4">
-            <a href="https://ernaud-breissie.github.io/thoughts/tag/achat.html">
-            achat
-            </a>
-        </li>
-        <li class="tag-3">
-            <a href="https://ernaud-breissie.github.io/thoughts/tag/bonus.html">
-            bonus
+            <a href="https://ernaud-breissie.github.io/thoughts/tag/cost.html">
+            cost
             </a>
         </li>
         <li class="tag-4">
-            <a href="https://ernaud-breissie.github.io/thoughts/tag/quete.html">
-            quete
-            </a>
-        </li>
-        <li class="tag-3">
-            <a href="https://ernaud-breissie.github.io/thoughts/tag/crpg.html">
-            crpg
-            </a>
-        </li>
-        <li class="tag-4">
-            <a href="https://ernaud-breissie.github.io/thoughts/tag/corruption.html">
-            corruption
+            <a href="https://ernaud-breissie.github.io/thoughts/tag/mechanic.html">
+            mechanic
             </a>
         </li>
         <li class="tag-4">
@@ -487,13 +1023,33 @@
             </a>
         </li>
         <li class="tag-4">
+            <a href="https://ernaud-breissie.github.io/thoughts/tag/quete.html">
+            quete
+            </a>
+        </li>
+        <li class="tag-4">
             <a href="https://ernaud-breissie.github.io/thoughts/tag/berserk.html">
             berserk
             </a>
         </li>
         <li class="tag-4">
-            <a href="https://ernaud-breissie.github.io/thoughts/tag/tree.html">
-            tree
+            <a href="https://ernaud-breissie.github.io/thoughts/tag/jv.html">
+            jv
+            </a>
+        </li>
+        <li class="tag-4">
+            <a href="https://ernaud-breissie.github.io/thoughts/tag/jrpg.html">
+            jrpg
+            </a>
+        </li>
+        <li class="tag-4">
+            <a href="https://ernaud-breissie.github.io/thoughts/tag/victory.html">
+            victory
+            </a>
+        </li>
+        <li class="tag-4">
+            <a href="https://ernaud-breissie.github.io/thoughts/tag/videogame.html">
+            videogame
             </a>
         </li>
 </ul>
