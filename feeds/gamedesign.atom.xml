@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Ernaud Breissie Blog : Looking For Gamedesign - Gamedesign</title><link href="https://ernaud-breissie.github.io/thoughts/" rel="alternate"></link><link href="https://ernaud-breissie.github.io/thoughts/feeds/gamedesign.atom.xml" rel="self"></link><id>https://ernaud-breissie.github.io/thoughts/</id><updated>2025-05-16T09:20:00+02:00</updated><entry><title>Listing of auction mechanics</title><link href="https://ernaud-breissie.github.io/thoughts/listing-of-auction-mechanics.html" rel="alternate"></link><published>2025-05-16T09:20:00+02:00</published><updated>2025-05-16T09:20:00+02:00</updated><author><name>Ernaud Breissie</name></author><id>tag:ernaud-breissie.github.io,2025-05-16:/thoughts/listing-of-auction-mechanics.html</id><summary type="html">&lt;p&gt;English version after the french one&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Systèmes d'Enchères dans les Jeux de Société : Mécanismes, Stratégies, Conception&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Les mécanismes d'enchères constituent un ensemble de règles permettant l'allocation de biens ou de privilèges par un processus d'offres compétitives. Ils peuvent être centraux ou subsidiaires à la structure ludique. Ce document analyse les …&lt;/p&gt;</summary><content type="html">&lt;p&gt;English version after the french one&lt;/p&gt;
+&lt;p&gt;Les mécanismes d'enchères constituent un ensemble de règles permettant l'allocation de biens ou de privilèges par un processus d'offres compétitives. Ils peuvent être centraux ou subsidiaires à la structure ludique. Ce billet de blog …&lt;/p&gt;</summary><content type="html">&lt;p&gt;English version after the french one&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Systèmes d'Enchères dans les Jeux de Société : Mécanismes, Stratégies, Conception&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Les mécanismes d'enchères constituent un ensemble de règles permettant l'allocation de biens ou de privilèges par un processus d'offres compétitives. Ils peuvent être centraux ou subsidiaires à la structure ludique. Ce document analyse les phases, variantes et principes de conception des enchères.&lt;/p&gt;
+&lt;p&gt;Les mécanismes d'enchères constituent un ensemble de règles permettant l'allocation de biens ou de privilèges par un processus d'offres compétitives. Ils peuvent être centraux ou subsidiaires à la structure ludique. Ce billet de blog analyse les phases, variantes et principes de conception des enchères.&lt;/p&gt;
 &lt;h3&gt;Phase 1 : Configuration Initiale – Cadre Économique des Enchères&lt;/h3&gt;
 &lt;p&gt;Les conditions initiales déterminent la valeur, le risque et la récompense.&lt;/p&gt;
 &lt;ul&gt;
@@ -287,7 +287,7 @@
 &lt;p&gt;Les mécanismes d'enchères sont des outils polyvalents. Ils engagent les joueurs sur des plans stratégiques, économiques et psychologiques. Leur efficacité dépend de la compréhension de leurs formes, des dynamiques engendrées, de la gestion monétaire et informationnelle, de l'exploitation des facteurs systémiques et psychologiques, et de l'intégration aux objectifs du jeu, à son thème et à l'expérience joueur. Si jamais j'ai oublié quelquechose n'hesitez pas a me contacter : &lt;a href="https://bsky.app/profile/ernaudbreissie.bsky.social"&gt;ernaudbreissie.bsky.social&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Auction Systems in Board Games: Mechanisms, Strategies, Design&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Auction mechanisms constitute a set of rules for allocating goods or privileges through a competitive bidding process. They can be central or subsidiary to the game structure. This document analyzes the phases, variants, and design principles of auctions.&lt;/p&gt;
+&lt;p&gt;Auction mechanisms constitute a set of rules for allocating goods or privileges through a competitive bidding process. They can be central or subsidiary to the game structure. This blog post analyzes the phases, variants, and design principles of auctions.&lt;/p&gt;
 &lt;h3&gt;Phase 1: Initial Setup – Economic Framework for Auctions&lt;/h3&gt;
 &lt;p&gt;Initial conditions determine value, risk, and reward.&lt;/p&gt;
 &lt;ul&gt;
